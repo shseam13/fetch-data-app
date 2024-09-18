@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# FETCH DATA APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that fetches purchase data from an external API, stores it in a MySQL database, and generates a report based on the stored data. The backend is built using Node.js and Express.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetches purchase data from an external API.
+- Stores the fetched data in a MySQL database.
+- Generates a report based on the stored data.
+- Displays the report in a tabular format with a gross total.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React, Axios
+- **Backend**: Node.js, Express, MySQL
+- **Database**: MySQL
+- **Styling**: CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/fetch-data-app.git
+    cd fetch-data-app
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**:
+    ```bash
+    # For the frontend
+    cd src
+    npm install
 
-### `npm run build`
+    # For the backend
+    cd ..
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Set up the MySQL database**:
+    - Create a MySQL database named `bitcode_test_db`.
+    - Update the `dbConfig` in `server.js` with your MySQL credentials.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Run the backend server**:
+    ```bash
+    node server.js
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Run the frontend application**:
+    ```bash
+    cd src
+    npm start
+    ```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Click the "Generate Report" button to fetch data, store it in the database, and generate the report.
+3. The report will be displayed in a table with the gross total for quantity, price, and total.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```plaintext
+fetch-data-app/
+├── src/                    # React frontend
+│   ├── App.css
+│   ├── App.js
+│   ├── DataFetcher.js
+│   └── index.js
+├── server.js               # Node.js backend
+└── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+**seam.cse.pciu@gmai.com**
+**+8801626014236**
