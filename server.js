@@ -12,7 +12,7 @@ app.use(cors());
 const dbConfig = {
   host: 'localhost',
   user: 'root',
-  password: 'sea123', // Replace with your MySQL root password
+  password: 'your_password', // Replace with your MySQL root password
   database: 'bitcode_test_db'
 };
 
